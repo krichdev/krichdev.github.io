@@ -1,0 +1,24 @@
+.project-img {
+	height: 340px;
+	width: 340px;
+}
+
+.hero {
+	width: 100%;
+	height: 460px;
+	background: url('bg.jpg') no-repeat center fixed;
+}
+
+.social-links {
+	color: white;
+	margin-top: 0;
+	margin-left: 40%;
+
+}
+
+.social-links li {
+	display: inline;
+	padding: 15px;
+}
+
+
