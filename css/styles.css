@@ -29,9 +29,11 @@ p {
 
 .headNav li a {
 	display: block;
-	width: 100px;
+	width: 150px;
+	height: 35px;
 	font-size: 18px;
 	color: white;
+	line-height: 35px;
 }
 
 .title h1 {
