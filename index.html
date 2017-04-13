@@ -18,7 +18,7 @@
 				<li><a href="#about">About</a></li>
 				<li><a href="#projects">Projects</a></li>
 				<li><a href="#skills">Skills</a></li>
-				<li><a href="mailto:kgrichardson2@gmail.com">Contact</a></li>
+				<li><a href="#contact">Contact</a></li>
 				<li><a target="_blank" href="https://drive.google.com/open?id=0B7_FXsAB4c1nODlBdmlLOFhEeEE">Resume</a></li>
 			</ul>
 		</div>
@@ -55,10 +55,17 @@
     			</div>
     			<div class="card-reveal">
       			<span class="card-title grey-text text-darken-4">Mad Gifs!<i class="material-icons right">close</i></span>
-      			<p>Mad GIFs is a twist on the classic word game Mad Libs. Instead of interjecting words, the user enters search terms for GIFs and a random GIF is pulled from the Giphy API and inserting them into the story.
+      			<p class="info">Mad GIFs is a twist on the classic word game Mad Libs. Instead of interjecting words, the user enters search terms for GIFs and a random GIF is pulled from the Giphy API and inserting them into the story.
 				</p>
 				<a target="_blank" href="https://github.com/krichdev/madgifs">View Code</a>
 				<a target="_blank" href="http://madgifs.herokuapp.com" class="right">View Live Project</a>
+				<br>
+				<br>
+				<div class="chip">Giphy API</div>
+				<div class="chip">Express</div>
+				<div class="chip">Node</div>
+				<div class="chip">HTML</div>
+				<div class="chip">CSS</div>
     			</div>
   			</div>
 			</div>
@@ -73,10 +80,18 @@
     			</div>
     			<div class="card-reveal">
       			<span class="card-title grey-text text-darken-4">Texpert<i class="material-icons right">close</i></span>
-      			<p>Texpert is a tech support on demand app. We wanted to build "The Uber for basic tech support." Texpert was built using Mongo, Express, Angular, Node and the socket.io API.
+      			<p class="info">Texpert is a tech support on demand app. We wanted to build "The Uber for basic tech support." Texpert was built using Mongo, Express, Angular, Node and the socket.io API.
 				</p>
 				<a target="_blank" href="https://github.com/krichdev/techport">View Code</a>
-				<a target="_blank" href="http://texpert.herokuapp.com" class="right">View Live Project</a>
+				<a target="_blank" href="http://texpert.herokuapp.com" class="right">View Live Project</a><br>
+				<br>
+				<div class="chip">Mongo</div>
+				<div class="chip">Express</div>
+				<div class="chip">Angular</div>
+				<div class="chip">Node</div>
+				<div class="chip">Sockets</div>
+				<div class="chip">HTML</div>
+				<div class="chip">CSS</div>
     			</div>
   			</div>
 			</div>
@@ -91,9 +106,15 @@
     			</div>
     			<div class="card-reveal">
       			<span class="card-title grey-text text-darken-4">Bouncy Donut<i class="material-icons right">close</i></span>
-      			<p>Bouncy Donut is a Flappy bird clone made with HTML, CSS, JavaScript, and the Phaser.io library.</p>
+      			<p class="info">Bouncy Donut is a Flappy bird clone made with HTML, CSS, JavaScript, and the Phaser.io library.</p>
 				<a target="_blank" href="https://github.com/krichdev/bouncy-donut">View Code</a>
 				<a target="_blank" href="http://helloimkyle.com/bouncy-donut" class="right">View Live Project</a>
+				<br>
+				<br>
+				<div class="chip">HTML</div>
+				<div class="chip">CSS</div>
+				<div class="chip">JavaScript</div>
+				<div class="chip">Phaser.io</div>
     			</div>
   			</div>
 			</div>
@@ -176,8 +197,28 @@
 		</div>
 	</div>
 	<!-- Contact Section - Name, email body, send button -->
-	<div id="contact" class="valign-wrapper">
-		<a href="mailto:kgrichardson2@gmail.com" class="contact"><h1 class="center white-text">Email Me</h1></a>
+	<div id="contact"> 
+		<div class="container">
+			<h1 class="center white-text">Contact Me!</h1>
+			<div class="row">
+				<div class="col s12 m6 offset-m3">
+					<form method="POST" action="http://formspree.io/kgrichardson2@gmail.com">
+						<div class="input-field col s12">
+							<input type="email" name="email" class="white-text">
+							<label for="email">Email</label>
+						</div>
+						<div class="input-field col s12">
+							<textarea name="message" class="materialize-textarea white-text"></textarea>
+							<label for="message">Your Message</label>
+						</div>
+						<input type="hidden" name="_next" value="http://www.helloimkyle.com" />
+						<div class="col s12 center">
+						<button type="submit" class="btn btn-large center">Send</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
