@@ -118,3 +118,26 @@ p {
 	color: #3498DB;
 }
 
+.hide-on-med-and-down {
+	background-color: none;
+	height: 0px;
+}
+
+nav {
+	background-color: rgba(0,0,0,0.0);
+	box-shadow: none;
+}
+
+nav.nav-center ul {
+    text-align: center;
+}
+nav.nav-center ul li {
+    display: inline;
+    float: none;
+	background-color: rgba(3,155,229,0.45);
+	padding: 5px;
+}
+nav.nav-center ul li a {
+    display: inline-block;
+	width: 100px;
+}
