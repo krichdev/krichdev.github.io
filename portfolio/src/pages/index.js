@@ -1,13 +1,17 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Img from 'gatsby-image'
-import styled from 'styled-components'
-import Test from '../components/test'
+import About from '../components/about'
+import Projects from '../components/projects'
+import Blog from '../components/blog'
+import Contact from '../components/contact'
+import projectData from '../projectData'
 
 const IndexPage = ({ data }) => (
   <div>
-    <Test />
-    <Test />
+    <About personal={data.personal.sizes}/>
+    <Projects projects={projectData}/>
+    <Blog />
   </div>
 )
 
@@ -25,5 +29,10 @@ export const query = graphql`
         ...GatsbyImageSharpSizes
       }
     }
+    personal: imageSharp(id: {regex: "/kyle-with-lucas.jpg/"}){
+      sizes(grayscale: true){
+        ...GatsbyImageSharpSizes
+      }
+    } 
   }
 `

@@ -5,8 +5,7 @@ import styled from 'styled-components'
 import logo from '../images/kyle-richardson-web-dev-seattle.png'
 
 const HeaderWrapper = styled.div`
-  background: #524763;
-  margin-bottom: 1.45rem;
+  background: #164675;
   overflow: hidden;
   position: relative;
   height: 40vh;
@@ -51,7 +50,7 @@ const Header = ({ siteTitle, background }) => (
         </Link>
       </h1>
       <h2>HELLO, I'M KYLE.</h2>
-      <h3>AN ALWAYS LEARNING DEVELOPER</h3>
+      <h3>// AN ALWAYS LEARNING DEVELOPER</h3>
     </HeaderContainer>
     <Img
       style={{
