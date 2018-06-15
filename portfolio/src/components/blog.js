@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const BlogWrapper = styled.div`
     width: 100%;
-    height: 100%;
+    height: 400px;
     padding: 1.8em 0;
     display: flex;
     justify-content: center;

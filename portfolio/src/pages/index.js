@@ -12,6 +12,7 @@ const IndexPage = ({ data }) => (
     <About personal={data.personal.sizes}/>
     <Projects projects={projectData}/>
     <Blog />
+    <Contact />
   </div>
 )
 

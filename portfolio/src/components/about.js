@@ -44,7 +44,13 @@ const About = ({personal}) => (
                 cloud bread letterpress everyday carry. 
                 Lyft craft beer hashtag snackwave VHS, 
                 subway tile tofu authentic freegan flexitarian 
-                hot chicken four loko ramps shaman kale chips.
+                hot chicken four loko ramps shaman kale.
+            </p>
+            <p>Cray normcore gluten-free, paleo unicorn 
+                cloud bread letterpress everyday carry. 
+                Lyft craft beer hashtag snackwave VHS, 
+                subway tile tofu authentic freegan flexitarian 
+                hot chicken four loko ramps shaman kale.
             </p>
         </AboutCopy>
     </AboutContainer>
