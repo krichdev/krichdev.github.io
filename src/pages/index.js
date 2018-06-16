@@ -9,8 +9,8 @@ import projectData from '../projectData'
 
 const IndexPage = ({ data }) => (
   <div>
-    <About personal={data.personal.sizes}/>
-    <Projects projects={projectData}/>
+    <About personal={data.personal.sizes} />
+    <Projects projects={data.allMarkdownRemark.edges} />
     <Blog />
     <Contact />
   </div>
@@ -20,20 +20,27 @@ export default IndexPage
 
 export const query = graphql`
   query IndexPageQuery {
-    background: imageSharp(id: { regex: "/seattle-web-developer.jpg/" }) {
-      sizes(maxWidth: 1240, grayscale: true, maxHeight: 500) {
+    personal: imageSharp(id: { regex: "/kyle-with-lucas.jpg/" }) {
+      sizes(grayscale: true) {
         ...GatsbyImageSharpSizes
       }
     }
-    logo: imageSharp(id: { regex: "/kyle-richardson-web-dev-seattle.png/" }) {
-      sizes(maxWidth: 200) {
-        ...GatsbyImageSharpSizes
+    allMarkdownRemark {
+      edges {
+        node {
+          frontmatter {
+            title
+            description
+            image {
+              childImageSharp {
+                sizes(maxWidth: 500) {
+                  ...GatsbyImageSharpSizes
+                }
+              }
+            }
+          }
+        }
       }
     }
-    personal: imageSharp(id: {regex: "/kyle-with-lucas.jpg/"}){
-      sizes(grayscale: true){
-        ...GatsbyImageSharpSizes
-      }
-    } 
   }
 `
