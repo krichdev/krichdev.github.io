@@ -14,11 +14,5 @@ module.exports = {
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [`Abel`],
-      },
-    },
   ],
 }
