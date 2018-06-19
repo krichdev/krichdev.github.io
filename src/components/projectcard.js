@@ -7,6 +7,16 @@ const ProjectCardWrapper = styled.div`
   width: 30%;
   margin-bottom: 15px;
   color: ghostwhite;
+  img {
+    transition: all 0.6s ease-in-out !important;
+    filter: grayscale(100);
+  }
+  &:hover {
+    img {
+      transform: scale(1.15);
+      filter: grayscale(0);
+    }
+  }
   h3 {
     text-align: center;
   }
