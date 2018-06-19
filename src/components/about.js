@@ -24,6 +24,9 @@ const AboutContainer = styled.div`
 const AboutCopy = styled.div`
   max-width: 450px;
   margin-top: 20px;
+  p {
+    padding: 0 15px;
+  }
 `
 
 const About = ({ personal }) => (

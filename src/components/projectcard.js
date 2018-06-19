@@ -16,7 +16,8 @@ const ProjectCardWrapper = styled.div`
 `
 
 const ProjectCardImg = styled.div`
-  height: 278px;
+  height: auto;
+  margin-bottom: 20px;
 `
 
 const ProjectCard = ({ project }) => (
