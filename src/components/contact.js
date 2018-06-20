@@ -40,13 +40,20 @@ const ContactForm = styled.form`
 const Contact = () => (
   <ContactWrapper>
     <h2>Get In Touch</h2>
-    <ContactForm name="contact" method="POST" action="/#" data-netlify="true">
+    <ContactForm
+      name="contact"
+      method="POST"
+      action="/#"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+    >
+      <input type="hidden" name="bot-field" />
       <input type="text" placeholder="Your Name" required />
 
       <input type="email" placeholder="Your E-mail" required />
 
       <textarea placeholder="Type your message" required />
-      <div data-netlify-recaptcha />
+
       <input type="submit" value="Contact Me" />
     </ContactForm>
   </ContactWrapper>
