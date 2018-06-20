@@ -38,6 +38,8 @@ export const query = graphql`
                 }
               }
             }
+            title_link
+            github
           }
         }
       }
