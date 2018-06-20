@@ -43,6 +43,7 @@ const IndexPage = ({ data }) => (
         <ContactForm
             name="contact"
             method="POST"
+            action="/"
             data-netlify="true"
             netlify
         >
@@ -51,6 +52,7 @@ const IndexPage = ({ data }) => (
             <input type="email" name="email" placeholder="Your E-mail" required />
 
             <textarea placeholder="Type your message" name="message" required />
+            <input type="hidden" name="contact" value="contact" />
 
             <input type="submit" value="Send" />
         </ContactForm>
