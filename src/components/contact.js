@@ -46,13 +46,14 @@ const Contact = () => (
       action="/#"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
+      netlify
     >
       <input type="hidden" name="bot-field" />
-      <input type="text" placeholder="Your Name" required />
+      <input type="text" name="name" placeholder="Your Name" required />
 
-      <input type="email" placeholder="Your E-mail" required />
+      <input type="email" name="email" placeholder="Your E-mail" required />
 
-      <textarea placeholder="Type your message" required />
+      <textarea placeholder="Type your message" name="message" required />
 
       <input type="submit" value="Contact Me" />
     </ContactForm>
