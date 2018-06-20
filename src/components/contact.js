@@ -11,9 +11,19 @@ const ContactWrapper = styled.div`
   align-items: center;
   color: ghostwhite;
 `
+const ContactForm = styled.form`
+  input,
+  textarea {
+    width: 80vw;
+    display: block;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
 
-const ContactButton = styled.button`
-    width: 50vw;
+  input[type='submit'] {
+    width: 80vw;
     background-color: #c1111d;
     color: ghostwhite;
     cursor: pointer;
@@ -24,15 +34,29 @@ const ContactButton = styled.button`
     &:hover {
       background-color: #ad0f1a;
     }
+  }
 `
 
 
 const Contact = () => (
   <ContactWrapper>
     <h2>Get In Touch</h2>
-    <Link to="/contact">
-      <ContactButton>E-mail Me</ContactButton>
-    </Link>
+    <ContactForm
+      name="contact"
+      method="POST"
+      action="/"
+      data-netlify="true"
+      netlify
+    >
+      <input type="hidden" name="form-name" value="contact" />
+      <input type="text" name="name" placeholder="Your Name" required />
+
+      <input type="email" name="email" placeholder="Your E-mail" required />
+
+      <textarea placeholder="Type your message" name="message" required />
+
+      <input type="submit" value="Send" />
+    </ContactForm>
   </ContactWrapper>
 )
 
