@@ -20,6 +20,13 @@ module.exports = {
         path: `${__dirname}/src/projects`,
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'post',
+        path: `${__dirname}/blog`,
+      },
+    },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
   ],
