@@ -10,8 +10,8 @@ import projectData from '../projectData'
 const IndexPage = ({ data }) => (
   <div>
     <About personal={data.personal.sizes} />
-    <Projects projects={data.allMarkdownRemark.edges} />
-    <Blog />
+    <Projects projects={data.projects.edges} />
+    <Blog posts={data.blog.edges} />
     <Contact />
   </div>
 )
@@ -25,7 +25,7 @@ export const query = graphql`
         ...GatsbyImageSharpSizes
       }
     }
-    allMarkdownRemark {
+    projects: allMarkdownRemark(filter: {frontmatter: {type: {eq: "project"}}}) {
       edges {
         node {
           frontmatter {
@@ -40,6 +40,15 @@ export const query = graphql`
             }
             title_link
             github
+          }
+        }
+      }
+    }
+    blog: allMarkdownRemark(filter: {frontmatter: {type: {eq: "blog"}}}, limit: 3){
+      edges{
+        node{
+          frontmatter{
+            title
           }
         }
       }
