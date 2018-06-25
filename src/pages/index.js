@@ -5,7 +5,6 @@ import About from '../components/about'
 import Projects from '../components/projects'
 import Blog from '../components/blog'
 import Contact from '../components/contact'
-import projectData from '../projectData'
 
 const IndexPage = ({ data }) => (
   <div>
