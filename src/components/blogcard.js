@@ -5,7 +5,6 @@ import Img from 'gatsby-image'
 
 const BlogCardWrapper = styled.div`
   width: 80vw;
-  height: 200px;
   padding: 15px;
   margin-bottom: 20px;
   border-radius: 3px;

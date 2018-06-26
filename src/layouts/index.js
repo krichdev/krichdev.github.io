@@ -9,8 +9,7 @@ const Layout = ({ children, data }) => (
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'Portfolio website for Kyle Richardson. A full stack web developer in Seattle, WA.' },
       ]}
     />
     <Header logo={data.logo.sizes} background={data.background.sizes} />
