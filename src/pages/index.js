@@ -43,7 +43,11 @@ export const query = graphql`
         }
       }
     }
-    blog: allMarkdownRemark(filter: {frontmatter: {type: {eq: "blog"}}}, limit: 3){
+    blog: allMarkdownRemark(
+      filter: {frontmatter: {type: {eq: "blog"}}}, 
+      limit: 3,
+      sort: { fields: [frontmatter___date], order: DESC }
+    ){
       edges{
         node{
           fields {
