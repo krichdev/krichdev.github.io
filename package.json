@@ -1,6 +1,6 @@
 {
-  "name": "Kyle Richardson Portfolio",
-  "description": "Portfolio for Kyle Richardson",
+  "name": "gatsby-starter-default",
+  "description": "Personal site for Kyle Richardson",
   "version": "1.0.0",
   "author": "Kyle Richardson <kgrichardson2@gmail.com>",
   "dependencies": {
