@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
+import BlogCard from './blogcard'
 
 const BlogWrapper = styled.div`
   width: 100%;
@@ -18,25 +19,16 @@ const BlogContainer = styled.div`
   align-items: center;
   width: 90%;
 `
-const BlogProjectCard = styled.div`
-  width: 80vw;
-  height: 200px;
-  margin-bottom: 20px;
-  border-radius: 3px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: all 0.2s ease-in-out;
-  &:hover {
-    transform: scale(1.03);
-  }
-`
 
-const Blog = () => (
+const Blog = ({ posts }) => (
   <BlogWrapper>
     <BlogContainer>
       <h2>Blog</h2>
-      <BlogProjectCard />
-      <BlogProjectCard />
-      <BlogProjectCard />
+      {posts.map(post => (
+        <Link key={post.node.fields.slug} to={post.node.fields.slug} style={{ textDecoration: 'none', color: 'black' }}>
+          <BlogCard post={post} />
+        </Link>
+      ))}
     </BlogContainer>
   </BlogWrapper>
 )

@@ -46,9 +46,16 @@ export const query = graphql`
     blog: allMarkdownRemark(filter: {frontmatter: {type: {eq: "blog"}}}, limit: 3){
       edges{
         node{
+          fields {
+            slug
+          }
           frontmatter{
             title
+            date(formatString: "MMMM DD, YYYY")
+            category
           }
+          excerpt(pruneLength: 200)
+          timeToRead
         }
       }
     }

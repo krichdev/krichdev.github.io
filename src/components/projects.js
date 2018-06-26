@@ -25,15 +25,15 @@ const ProjectsContainer = styled.div`
     width: 90%;
 `
 
-const Projects = ({projects}) => (
-  <ProjectsWrapper>
-      <h2>Stuff I've Worked On</h2>
-    <ProjectsContainer>
-        {projects.map(project => (
-            <ProjectCard project={project} />
-        ))}
-    </ProjectsContainer>
-  </ProjectsWrapper>
+const Projects = ({ projects }) => (
+    <ProjectsWrapper>
+        <h2>Stuff I've Worked On</h2>
+        <ProjectsContainer>
+            {projects.map(project => (
+                <ProjectCard key={project.node.frontmatter.title} project={project} />
+            ))}
+        </ProjectsContainer>
+    </ProjectsWrapper>
 )
 
 export default Projects
