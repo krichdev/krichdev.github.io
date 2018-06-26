@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "Kyle Richardson Portfolio",
+  "description": "Portfolio for Kyle Richardson",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Kyle Richardson <kgrichardson2@gmail.com>",
   "dependencies": {
     "gatsby": "^1.9.270",
     "gatsby-cli": "^1.1.58",
