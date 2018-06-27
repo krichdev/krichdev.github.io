@@ -26,7 +26,20 @@ module.exports = {
         path: `${__dirname}/blog`,
       },
     },
-    'gatsby-transformer-remark',
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        excerpt_separator: `<!-- end -->`,
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 740,
+            },
+          },
+        ],
+      },
+    },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
@@ -38,7 +51,7 @@ module.exports = {
         background_color: `#164675`,
         theme_color: `#164675`,
         display: `minimal-ui`,
-        icon: `src/images/favicon.png`
+        icon: `src/images/favicon.png`,
       },
     },
     'gatsby-plugin-offline',
