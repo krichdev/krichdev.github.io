@@ -22,9 +22,10 @@ const CategoryTag = styled.div`
   font-size: .75em;
   color: white;
   display: inline;
-  background-color: #9D7CBF;
+  background-color: #164675;
   border-radius: 3px;
   padding: 5px;
+  margin-right: 5px;
 `
 
 
@@ -32,9 +33,11 @@ const BlogCard = ({ post }) => (
     <BlogCardWrapper>
         <h2>{post.node.frontmatter.title}</h2>
         <p>{post.node.excerpt}</p>
-        <CategoryTag>
-            {post.node.frontmatter.category}
-        </CategoryTag>
+        {post.node.frontmatter.tags && post.node.frontmatter.tags.map(tag => (
+            <CategoryTag>
+                {tag}
+            </CategoryTag>
+        ))}
     </BlogCardWrapper>
 )
 

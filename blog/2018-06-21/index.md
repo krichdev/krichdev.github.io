@@ -2,6 +2,10 @@
 date: "2018-06-25"
 title: "Updating My Portfolio"
 category: "Gatsby"
+tags:
+    - Gatsby
+    - Graphql
+    - Netlify
 type: "blog"
 ---
 

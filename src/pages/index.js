@@ -57,6 +57,7 @@ export const query = graphql`
             title
             date(formatString: "MMMM DD, YYYY")
             category
+            tags
           }
           excerpt(pruneLength: 200)
           timeToRead
