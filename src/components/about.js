@@ -25,7 +25,6 @@ const AboutContainer = styled.div`
   }
   svg {
     height: 30px;
-    margin-right: 15px;
     fill: #164675;
   }
 `
@@ -35,6 +34,11 @@ const AboutCopy = styled.div`
   p {
     padding: 0 15px;
   }
+`
+
+const IconWrapper = styled.div`
+  display: flex;
+  justify-content: space-around;
 `
 
 
@@ -59,13 +63,15 @@ const About = ({ personal }) => (
           to problem solve, contribute to a team, and continue to improve my development skills.
         </p>
         <p style={{ marginBottom: "10px", textDecoration: "underline" }}>Find Me Online</p>
-        <a href="https://www.github.com/krichdev" target="__blank">
-          <Github />
-        </a>
-        <a href="https://www.linkedin.com/in/kyle-richardson" target="__blank">
-          <Linkedin />
-        </a>
-        <Instagram />
+        <IconWrapper>
+          <a href="https://www.github.com/krichdev" target="__blank">
+            <Github />
+          </a>
+          <a href="https://www.linkedin.com/in/kyle-richardson" target="__blank">
+            <Linkedin />
+          </a>
+          <Instagram />
+        </IconWrapper>
       </AboutCopy>
     </AboutContainer>
   </AboutWrapper >
