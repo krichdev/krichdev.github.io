@@ -2,7 +2,6 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
-import { GitHub } from 'styled-icons/fa-brands/Github'
 
 const AboutWrapper = styled.div`
   width: 100%;
@@ -28,9 +27,6 @@ const AboutCopy = styled.div`
   p {
     padding: 0 15px;
   }
-`
-const Github = Github.extend`
-  color: #164675;
 `
 
 
