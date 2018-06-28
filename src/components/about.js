@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
+import { GitHub } from 'styled-icons/fa-brands/Github'
 
 const AboutWrapper = styled.div`
   width: 100%;
@@ -28,6 +29,10 @@ const AboutCopy = styled.div`
     padding: 0 15px;
   }
 `
+const Github = Github.extend`
+  color: #164675;
+`
+
 
 const About = ({ personal }) => (
   <AboutWrapper>
@@ -44,17 +49,12 @@ const About = ({ personal }) => (
       />
       <AboutCopy>
         <p>
-          Cray normcore gluten-free, paleo unicorn cloud bread letterpress
-          everyday carry. Lyft craft beer hashtag snackwave VHS, subway tile
-          tofu authentic freegan flexitarian hot chicken four loko ramps shaman
-          kale.
+          I am a front end developer who grew up working in my family’s business.
+          I enjoy listening to 90's slow jams, camping, and coaching baseball.
+          I’m eager to leverage my experience gained working in a small business
+          to problem solve, contribute to a team, and continue to improve my development skills.
         </p>
-        <p>
-          Cray normcore gluten-free, paleo unicorn cloud bread letterpress
-          everyday carry. Lyft craft beer hashtag snackwave VHS, subway tile
-          tofu authentic freegan flexitarian hot chicken four loko ramps shaman
-          kale.
-        </p>
+        <p>Find Me Online</p>
       </AboutCopy>
     </AboutContainer>
   </AboutWrapper>
