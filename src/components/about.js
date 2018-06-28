@@ -2,6 +2,9 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
+import Github from '../icons/Github'
+import Linkedin from '../icons/LinkedIn'
+import Instagram from '../icons/Instagram'
 
 const AboutWrapper = styled.div`
   width: 100%;
@@ -19,6 +22,11 @@ const AboutContainer = styled.div`
   align-items: center;
   @media (max-width: 640px) {
     flex-direction: column;
+  }
+  svg {
+    height: 30px;
+    margin-right: 15px;
+    fill: #164675;
   }
 `
 const AboutCopy = styled.div`
@@ -50,10 +58,17 @@ const About = ({ personal }) => (
           I’m eager to leverage my experience gained working in a small business
           to problem solve, contribute to a team, and continue to improve my development skills.
         </p>
-        <p>Find Me Online</p>
+        <p style={{ marginBottom: "10px", textDecoration: "underline" }}>Find Me Online</p>
+        <a href="https://www.github.com/krichdev" target="__blank">
+          <Github />
+        </a>
+        <a href="https://www.linkedin.com/in/kyle-richardson" target="__blank">
+          <Linkedin />
+        </a>
+        <Instagram />
       </AboutCopy>
     </AboutContainer>
-  </AboutWrapper>
+  </AboutWrapper >
 )
 
 export default About
