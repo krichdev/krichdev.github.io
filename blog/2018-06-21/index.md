@@ -31,11 +31,11 @@ These were the only two main emphasizes that I put on increasing speed, and take
 ![](./after-speed-score.png)
 > Page speed report after the redo with Gatsby
 
-## Modern Tech
+## New Tech
 
-I was very excited about updating my portfolio because it would allow me to show some work with modern technologies. Being able to make reusable components in React, and import wherever needed was awesome. Then came the data integration. The Gatsby community has a handful of plugins that allow you to bring in your data from Wordpress, Contentful, Markdown files, and more. Once a build takes place, you then can query this data with GraphQL. 
+I was very excited about updating my portfolio because it would allow me to show some work with newer technologies. Being able to make reusable components in React, and import wherever needed was awesome. Then came the data integration. The Gatsby community has a handful of plugins that allow you to bring in your data from Wordpress, Contentful, Markdown files, and more. Once a build takes place, you then can query this data with GraphQL. 
 
-This site was my first interaction with GraphQL and I have to say it's pretty awesome. I think of it as a powerful combination of REST API's and JSON. When you run `gatsby develop` you are prompted with two local host ports. One to view your site, and the other is a GraphiQL url. GraphiQL allows you to test your queries and see results in real time before you use them. 
+This site was my first interaction with GraphQL and I have to say it's pretty awesome. I think of it as a powerful combination of REST API's and JSON. When you run `gatsby develop` you are prompted with two local host ports. One is a local version of your site, and the other is a GraphiQL url. GraphiQL allows you to test your queries and see results in real time before you use them. 
 
-Using GraphiQL was crucial, and the fact that it is self documenting saved me a ton of time. Just hit `ctrl + space` and you could see the list of available keywords to include in your query. Another great benefit I found with GraphQL is that your results mirror your query, so you don't have to guess what the key value pairs are.
+Using GraphiQL is very easy, and is self documenting, which will save a lot of time. Just hit `ctrl + space` and you could see the list of available keys to include in your query. Another great benefit I found with GraphQL is that your results mirror your query, which is easier than making traditional API calls and not necessarily knowing the key value pairs.
 
