@@ -6,6 +6,13 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-116464696-3`,
+
+      }
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'img',
