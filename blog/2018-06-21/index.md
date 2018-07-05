@@ -43,7 +43,7 @@ Using GraphiQL is very easy, and is self documenting, which will save a lot of t
 
 ![](./rest-vs-graphql.jpg)
 
-> Great anaolgy from @NikkitaFTW
+> Great analogy from @NikkitaFTW
 
 ## Next Steps
 
