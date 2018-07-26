@@ -12,6 +12,6 @@ Code for my personal site at [www.helloimkyle.com](https://www.helloimkyle.com).
   * The site is hosted with Netlify, and includes CI that is hooked into this repo.
 
 ## Todo 
-* Write more blog posts about software development
-* Create a page to view blog posts in a certain category
-* Create a page to list categories
+- [] Write more blog posts about software development
+- [] Create a page to view blog posts in a certain category
+- [] Create a page to list categories
