@@ -3,13 +3,13 @@ Code for my personal site at [www.helloimkyle.com](https://www.helloimkyle.com).
 
 ## Technologies used
 * [Gatsby.js](https://www.gatsbyjs.org)
-⋅⋅* Gatsby is a static site generator for React.
+  * Gatsby is a static site generator for React.
 * React
-⋅⋅* Styled-components for CSS.
+  * Styled-components for CSS.
 * Webpack
 * GraphQl
 * [Netlify](https://www.netlify.com)
-⋅⋅* The site is hosted with Netlify, and includes CI that is hooked into this repo.
+  * The site is hosted with Netlify, and includes CI that is hooked into this repo.
 
 ## Todo 
 * Write more blog posts about software development
