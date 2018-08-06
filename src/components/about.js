@@ -70,7 +70,9 @@ const About = ({ personal }) => (
           <a href="https://www.linkedin.com/in/kyle-richardson" target="__blank">
             <Linkedin />
           </a>
-          <Instagram />
+          <a href="https://www.instagram.com/kylecodes" target="__blank">
+            <Instagram />
+          </a>
         </IconWrapper>
       </AboutCopy>
     </AboutContainer>

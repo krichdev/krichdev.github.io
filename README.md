@@ -1,26 +1,17 @@
-# gatsby-starter-default
-The default Gatsby starter.
+# Personal Website
+Code for my personal site at [www.helloimkyle.com](https://www.helloimkyle.com).
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
+## Technologies used
+* [Gatsby.js](https://www.gatsbyjs.org)
+  * Gatsby is a static site generator for React.
+* React
+  * Styled-components for CSS.
+* Webpack
+* GraphQl
+* [Netlify](https://www.netlify.com)
+  * The site is hosted with Netlify, and includes CI that is hooked into this repo.
 
-## Install
-
-Make sure that you have the Gatsby CLI program installed:
-```sh
-npm install --global gatsby-cli
-```
-
-And run from your CLI:
-```sh
-gatsby new gatsby-example-site
-```
-
-Then you can run it by:
-```sh
-cd gatsby-example-site
-gatsby develop
-```
-
-## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+## Todo 
+- [ ] Write more blog posts about software development
+- [ ] Create a page to view blog posts in a certain category
+- [ ] Create a page to list categories
