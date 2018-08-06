@@ -10,6 +10,7 @@ const Layout = ({ children, data }) => (
       title={data.site.siteMetadata.title}
       meta={[
         { name: 'description', content: 'Portfolio website for Kyle Richardson. A full stack web developer in Seattle, WA.' },
+        { name: 'google-site-verification', content: 'sg74inu3b2a9_jQhpJVCjJlom9daF79YSGoTzqsxZEc' }
       ]}
     />
     <Header logo={data.logo.sizes} background={data.background.sizes} />
