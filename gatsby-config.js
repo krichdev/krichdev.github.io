@@ -1,10 +1,14 @@
 module.exports = {
   siteMetadata: {
     title: `Hello I'm Kyle`,
+    siteUrl: `https://helloimkyle.com`
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
+    {
+      resolve: 'gatsby-plugin-sitemap'
+    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
