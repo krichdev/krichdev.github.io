@@ -8,6 +8,7 @@ Code for my personal site at [www.helloimkyle.com](https://www.helloimkyle.com).
   * Styled-components for CSS.
 * Webpack
 * GraphQl
+* Blog posts are written in markdown
 * [Netlify](https://www.netlify.com)
   * The site is hosted with Netlify, and includes CI that is hooked into this repo.
 
