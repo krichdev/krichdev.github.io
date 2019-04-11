@@ -17,3 +17,6 @@ fields:
 - type: text
   name: type
   label: type
+  default: blog
+  config:
+    required: true
