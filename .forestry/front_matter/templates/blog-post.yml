@@ -20,3 +20,5 @@ fields:
   default: blog
   config:
     required: true
+pages:
+- blog/2019-04-10/adding-forestry-io-to-my-gatsby-site.md
