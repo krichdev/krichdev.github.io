@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Kyle Richardson <kgrichardson2@gmail.com>",
   "dependencies": {
-    "gatsby": "^1.9.273",
+    "gatsby": "^5.3.3",
     "gatsby-cli": "^1.1.58",
     "gatsby-image": "^1.0.52",
     "gatsby-link": "^1.6.40",
